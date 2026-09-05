@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class CreateWall : MonoBehaviour
@@ -12,4 +13,6 @@ public class CreateWall : MonoBehaviour
         int randomNum = Random.Range(0, walls.Count);
         Instantiate(walls[randomNum],targetWall.transform.position,Quaternion.identity);
     }
+
+
 }

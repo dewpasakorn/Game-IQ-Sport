@@ -12,24 +12,12 @@ public class Health : MonoBehaviour
 
     public System.Action GetDamagedEvent;
     [Header("Flash Settings")]
-    [SerializeField] private Renderer targetRenderer; // MeshRenderer หรือ SkinnedMeshRenderer
-    [SerializeField] private Color flashColor = Color.red;
-    [SerializeField] private float flashDuration = 0.1f;
-    [SerializeField] private int flashCount = 2;
     [SerializeField] private TheEnd theEnd;
-
-    private Color originalColor;
-    private Material matInstance;
+    [SerializeField] private Animator hitEffect;
 
     private void Awake()
     {
         maximumHealth = currentHealth;
-
-        if (targetRenderer != null)
-        {
-            matInstance = targetRenderer.material; // สร้าง material instance
-            originalColor = matInstance.color;
-        }
     }
 
     public int GetCurrentHealth() => currentHealth;
@@ -37,10 +25,9 @@ public class Health : MonoBehaviour
 
     public void GetDamaged(int dmg)
     {
+        hitEffect.SetTrigger("Hit");
         currentHealth = Mathf.Max(0, currentHealth - dmg);
         GetDamagedEvent?.Invoke();
-
-        StartCoroutine(FlashMaterial());
 
         if (currentHealth == 0)
         {
@@ -49,16 +36,4 @@ public class Health : MonoBehaviour
         }
     }
 
-    private IEnumerator FlashMaterial()
-    {
-        if (matInstance == null) yield break;
-
-        for (int i = 0; i < flashCount; i++)
-        {
-            matInstance.color = flashColor;
-            yield return new WaitForSeconds(flashDuration);
-            matInstance.color = originalColor;
-            yield return new WaitForSeconds(flashDuration);
-        }
-    }
 }

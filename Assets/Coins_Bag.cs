@@ -11,7 +11,7 @@ public class Coins_Bag : MonoBehaviour
     public void AddsCoins()
     {
         currentCoins += 1;
-        coinText.text = "COINS: "+currentCoins.ToString();
+        coinText.text = currentCoins.ToString();
     }
 
     public int GetCurrentCoins()

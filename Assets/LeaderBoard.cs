@@ -10,7 +10,6 @@ public class PlayerData
 {
     public string userName;
     public int coins;
-    public string email;
     public string number;
     public string dateTime; // ✅ บันทึกเวลาเป็น string (เพื่อให้ JsonUtility รองรับ)
 }
@@ -53,7 +52,6 @@ public class LeaderBoard : MonoBehaviour
         {
             userName = _userName,
             coins = _coins,
-            email = _email,
             number = _number,
             dateTime = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") // ✅ เก็บเวลาปัจจุบัน
         };
@@ -89,7 +87,7 @@ public class LeaderBoard : MonoBehaviour
             for (int i = 0; i < playerDataList.players.Count; i++)
             {
                 var p = playerDataList.players[i];
-                writer.WriteLine($"#{i + 1} | {p.userName} | {p.coins} coins | {p.email} | {p.number} | {p.dateTime}");
+                writer.WriteLine($"#{i + 1} | {p.userName} | {p.coins} coins | {p.number} | {p.dateTime}");
             }
 
             writer.WriteLine("====================");

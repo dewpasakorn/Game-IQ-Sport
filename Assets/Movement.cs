@@ -1,116 +1,124 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
     [SerializeField] private float movementSpeed = 5;
-    [SerializeField] private float speedMultiplay = 1;
+    private float speedMultiplay = 1;
     [SerializeField] private float tickIncreaseSpeed = 0.1f;
     [SerializeField] private float increaseSpeed = 0.1f;
     [SerializeField] private float jumpForce = 3;
-    [SerializeField] private float downForce = 3;
     [SerializeField] private Rigidbody rid;
-    [SerializeField] private float groundCheckDistance = 1f; // ระยะตรวจพื้น
-    [SerializeField] private LayerMask groundLayer; // เลือก Layer ของพื้น
+    [SerializeField] private float groundCheckDistance = 1f;      // ระยะตรวจพื้น (สำหรับ jump/landed จริง)
+    [SerializeField] private float nearGroundDistance = 2f;       // ระยะ "เกือบถึงพื้น" (สำหรับเล่นอนิเมชันล่วงหน้า)
+    [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Animator playerAnimator;
-    [SerializeField] private float delayJump =  .5f;
     [SerializeField] private StartGame startGame;
+    private Health health;
     private float _tickIncreaseSpeed;
-    private float _delayJump;
-    private bool isJump;
+
+    [SerializeField] private float slowAmount = 2f;
+    [SerializeField] private float slowRecoverTime = 1.5f;
+    private Coroutine slowCoroutine;
 
     private bool isStart = false;
+    private bool wasNearGround = true; // track previous frame's "almost grounded" state
 
     private void OnEnable()
     {
         startGame.OnClickEvent += StartGame;
+        health.GetDamagedEvent += StartSlow;
     }
 
     private void OnDisable()
     {
         startGame.OnClickEvent -= StartGame;
+        health.GetDamagedEvent -= StartSlow;
     }
 
-    private void  StartGame()
+    private void StartGame()
     {
         isStart = true;
         playerAnimator.SetTrigger("StartGame");
     }
 
-    void Start()
+    void Awake()
     {
-        rid.GetComponent<Rigidbody>();
-        _delayJump = delayJump;
         _tickIncreaseSpeed = tickIncreaseSpeed;
+        health = GetComponent<Health>();
     }
+
+    void StartSlow()
+    {
+        // Restart the effect if hit again mid-slow, instead of stacking
+        if (slowCoroutine != null)
+            StopCoroutine(slowCoroutine);
+
+        slowCoroutine = StartCoroutine(SlowRoutine());
+    }
+
+    private IEnumerator SlowRoutine()
+    {
+        float originalSpeed = movementSpeed;
+        float slowedSpeed = Mathf.Max(0f, originalSpeed - slowAmount);
+
+        movementSpeed = slowedSpeed;
+
+        float elapsed = 0f;
+        while (elapsed < slowRecoverTime)
+        {
+            elapsed += Time.deltaTime;
+            movementSpeed = Mathf.Lerp(slowedSpeed, originalSpeed, elapsed / slowRecoverTime);
+            yield return null;
+        }
+
+        movementSpeed = originalSpeed;
+        slowCoroutine = null;
+    }
+
     void Update()
     {
-        // ตรวจสอบสถานะการกระโดด
-        if (isJump)
-        {
-            _delayJump = Mathf.Max(0, _delayJump - Time.deltaTime);
-            if (_delayJump == 0)
-            {
-                isJump = false;
-                    _delayJump = delayJump;
-            }
-        }
+        if (!isStart) return;
 
-        // เช็คระยะจากพื้น
-        if (GroundDistance() > groundCheckDistance && !isJump)  // ถ้าตัวละครไม่ได้กระโดด และไม่อยู่บนพื้น
-        {
-            // เรียก Fall ถ้าตัวละครตกจากพื้นจริงๆ
-            playerAnimator.SetTrigger("Fall");
-        }
-        else if (IsGround() && !isJump)  // ถ้าตัวละครอยู่บนพื้นและไม่ได้กระโดด
-        {
-            // ถ้าตัวละครอยู่บนพื้นและไม่ได้กระโดด ก็ไม่ต้องเรียก Fall
-            playerAnimator.ResetTrigger("Fall");  // รีเซ็ต trigger "Fall" เพื่อไม่ให้เกิดการเปลี่ยนแปลงสถานะโดยไม่จำเป็น
-        }
+        bool isNearGround = IsNearGround();
+        bool isFalling = rid.velocity.y <= 0f;
 
-        // กระโดดได้เฉพาะตอนติดพื้น
+        // Fire "Grounded" the moment we come within nearGroundDistance while falling,
+        // but only once per approach (not every frame while near ground)
+        if (isNearGround && isFalling && !wasNearGround)
+        {
+            playerAnimator.SetTrigger("Grounded");
+        }
+        wasNearGround = isNearGround;
+
         if (Input.GetMouseButtonDown(0) && IsGround())
         {
-            if (!isStart) return;
-
             playerAnimator.SetTrigger("Jump");
-            isJump = true;
             rid.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         }
     }
 
+    // Actual contact with the ground — used for jump input
     public bool IsGround()
     {
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, groundCheckDistance, groundLayer))
-        {
-            return true;
-        }
-        else
-        { 
-            return false;
+        return Physics.Raycast(transform.position, Vector3.down, groundCheckDistance, groundLayer);
     }
-}
 
-    public float GroundDistance()
+    // Slightly larger check — used to trigger the landing animation a bit early
+    public bool IsNearGround()
     {
-        RaycastHit hit;
- 
-        if (Physics.Raycast(transform.position, Vector3.down, out hit,Mathf.Infinity, groundLayer))
-        {
-            return hit.distance;
-        }
-        return groundCheckDistance ;
+        return Physics.Raycast(transform.position, Vector3.down, nearGroundDistance, groundLayer);
     }
 
     private void FixedUpdate()
     {
-        if(!isStart)  return;
+        if (!isStart) return;
 
         _tickIncreaseSpeed = Mathf.Max(0, _tickIncreaseSpeed - Time.deltaTime);
 
-        if(_tickIncreaseSpeed == 0)
+        if (_tickIncreaseSpeed == 0)
         {
             speedMultiplay += increaseSpeed;
             _tickIncreaseSpeed = tickIncreaseSpeed;
