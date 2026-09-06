@@ -13,40 +13,34 @@ MonoBehaviour:
   m_Name: Bloom
   m_EditorClassIdentifier: 
   active: 1
-  m_AdvancedMode: 0
   threshold:
     m_OverrideState: 1
-    m_Value: 1
-    min: 0
+    m_Value: 0.9
   intensity:
     m_OverrideState: 1
-    m_Value: 2.5
-    min: 0
+    m_Value: 1
   scatter:
-    m_OverrideState: 0
-    m_Value: 0.7
-    min: 0
-    max: 1
+    m_OverrideState: 1
+    m_Value: 0.5
   clamp:
     m_OverrideState: 0
     m_Value: 65472
-    min: 0
   tint:
     m_OverrideState: 0
     m_Value: {r: 1, g: 1, b: 1, a: 1}
-    hdr: 0
-    showAlpha: 0
-    showEyeDropper: 1
   highQualityFiltering:
     m_OverrideState: 0
     m_Value: 0
+  skipIterations:
+    m_OverrideState: 0
+    m_Value: 1
   dirtTexture:
     m_OverrideState: 0
     m_Value: {fileID: 0}
+    dimension: 1
   dirtIntensity:
     m_OverrideState: 0
     m_Value: 0
-    min: 0
 --- !u!114 &-7011558710299706105
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -60,26 +54,18 @@ MonoBehaviour:
   m_Name: Vignette
   m_EditorClassIdentifier: 
   active: 1
-  m_AdvancedMode: 0
   color:
     m_OverrideState: 0
     m_Value: {r: 0, g: 0, b: 0, a: 1}
-    hdr: 0
-    showAlpha: 0
-    showEyeDropper: 1
   center:
     m_OverrideState: 0
     m_Value: {x: 0.5, y: 0.5}
   intensity:
     m_OverrideState: 1
     m_Value: 0.168
-    min: 0
-    max: 1
   smoothness:
     m_OverrideState: 1
     m_Value: 0.301
-    min: 0.01
-    max: 1
   rounded:
     m_OverrideState: 0
     m_Value: 0
@@ -95,56 +81,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c01700fd266d6914ababb731e09af2eb, type: 3}
   m_Name: DepthOfField
   m_EditorClassIdentifier: 
-  active: 0
-  m_AdvancedMode: 0
+  active: 1
   mode:
     m_OverrideState: 1
     m_Value: 2
   gaussianStart:
     m_OverrideState: 0
     m_Value: 10
-    min: 0
   gaussianEnd:
     m_OverrideState: 0
     m_Value: 30
-    min: 0
   gaussianMaxRadius:
     m_OverrideState: 0
     m_Value: 1
-    min: 0.5
-    max: 1.5
   highQualitySampling:
     m_OverrideState: 0
     m_Value: 0
   focusDistance:
     m_OverrideState: 1
     m_Value: 6
-    min: 0.1
   aperture:
     m_OverrideState: 1
-    m_Value: 2.7
-    min: 1
-    max: 32
+    m_Value: 11.9
   focalLength:
     m_OverrideState: 1
-    m_Value: 110
-    min: 1
-    max: 300
+    m_Value: 139
   bladeCount:
     m_OverrideState: 0
     m_Value: 5
-    min: 3
-    max: 9
   bladeCurvature:
     m_OverrideState: 0
     m_Value: 1
-    min: 0
-    max: 1
   bladeRotation:
     m_OverrideState: 0
     m_Value: 0
-    min: -180
-    max: 180
+--- !u!114 &-4873144192602323029
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5485954d14dfb9a4c8ead8edb0ded5b1, type: 3}
+  m_Name: LiftGammaGain
+  m_EditorClassIdentifier: 
+  active: 1
+  lift:
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 0.9616901, z: 0.8844071, w: -0.024449877}
+  gamma:
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 0.9265609, z: 0.70466554, w: 0.3667482}
+  gain:
+    m_OverrideState: 0
+    m_Value: {x: 1, y: 1, z: 1, w: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,11 +150,13 @@ MonoBehaviour:
   m_Name: StylisedWaterProfile
   m_EditorClassIdentifier: 
   components:
-  - {fileID: 849379129802519247}
   - {fileID: -7893295128165547882}
   - {fileID: -7011558710299706105}
   - {fileID: -6731807918789962074}
---- !u!114 &849379129802519247
+  - {fileID: -4873144192602323029}
+  - {fileID: 7576449890994189225}
+  - {fileID: 3354918211989902482}
+--- !u!114 &3354918211989902482
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}
@@ -171,11 +165,41 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97c23e3b12dc18c42a140437e53d3951, type: 3}
-  m_Name: Tonemapping
+  m_Script: {fileID: 11500000, guid: 221518ef91623a7438a71fef23660601, type: 3}
+  m_Name: WhiteBalance
   m_EditorClassIdentifier: 
   active: 1
-  m_AdvancedMode: 0
-  mode:
+  temperature:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: -9
+  tint:
+    m_OverrideState: 0
+    m_Value: 0
+--- !u!114 &7576449890994189225
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66f335fb1ffd8684294ad653bf1c7564, type: 3}
+  m_Name: ColorAdjustments
+  m_EditorClassIdentifier: 
+  active: 1
+  postExposure:
+    m_OverrideState: 0
+    m_Value: 0.19
+  contrast:
+    m_OverrideState: 1
+    m_Value: 9
+  colorFilter:
+    m_OverrideState: 0
+    m_Value: {r: 1, g: 1, b: 1, a: 1}
+  hueShift:
+    m_OverrideState: 0
+    m_Value: 0
+  saturation:
+    m_OverrideState: 1
+    m_Value: 6

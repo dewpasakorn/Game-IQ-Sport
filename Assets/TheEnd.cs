@@ -6,7 +6,7 @@ using System.Text.RegularExpressions;  // ใช้สำหรับตรว�
 
 public class TheEnd : MonoBehaviour
 {
-    [SerializeField] private TMP_InputField enterName, enterEmail, enterNumber;
+    [SerializeField] private TMP_InputField enterName, enterNumber;
     [SerializeField] private TMP_Text debugText;
     [SerializeField] private Button button;
     [SerializeField] private LeaderBoard leaderBoard;
@@ -17,16 +17,9 @@ public class TheEnd : MonoBehaviour
     public void EnterConfirm()
     {
         // เช็คว่า input fields ทั้งหมดไม่เป็นค่าว่าง
-        if (string.IsNullOrWhiteSpace(enterName.text) || string.IsNullOrWhiteSpace(enterEmail.text) || string.IsNullOrWhiteSpace(enterNumber.text))
+        if (string.IsNullOrWhiteSpace(enterName.text) || string.IsNullOrWhiteSpace(enterNumber.text))
         {
             ShowErrorText("Please fill in all fields.");
-            return;
-        }
-
-        // เช็ครูปแบบ Email
-        if (!IsValidEmail(enterEmail.text))
-        {
-            ShowErrorText("Invalid email format.");
             return;
         }
 
@@ -38,13 +31,13 @@ public class TheEnd : MonoBehaviour
         }
 
         // ถ้าทุกอย่างถูกต้อง
-        EnterName(enterName.text,enterEmail.text,enterNumber.text);
+        EnterName(enterName.text,enterNumber.text);
     }
 
-    void EnterName(string userName,string email,string number)
+    void EnterName(string userName,string number)
     {
         leaderBoard.gameObject.SetActive(true);
-        leaderBoard.GetLeaderStat(userName, email, number, coin_bag.GetCurrentCoins());
+        leaderBoard.GetLeaderStat(userName, number, coin_bag.GetCurrentCoins());
         gameObject.SetActive(false);
     }
 
@@ -65,12 +58,6 @@ public class TheEnd : MonoBehaviour
         isShowingError = false; // รีเซ็ตสถานะหลังจากข้อความหายไป
     }
 
-    // ฟังก์ชันตรวจสอบรูปแบบอีเมล
-    private bool IsValidEmail(string email)
-    {
-        string emailPattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
-        return Regex.IsMatch(email, emailPattern);
-    }
 
     // ฟังก์ชันตรวจสอบหมายเลขโทรศัพท์ (เบอร์โทร 10 หลัก)
     private bool IsValidPhoneNumber(string number)

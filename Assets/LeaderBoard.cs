@@ -43,7 +43,7 @@ public class LeaderBoard : MonoBehaviour
 
 
     // ✅ รับข้อมูลผู้เล่นใหม่
-    public void GetLeaderStat(string _userName, string _email, string _number, int _coins)
+    public void GetLeaderStat(string _userName, string _number, int _coins)
     {
         if (string.IsNullOrEmpty(savePathJson))
             savePathJson = Path.Combine(Application.persistentDataPath, "leaderboard.json");
