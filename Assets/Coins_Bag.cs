@@ -10,6 +10,7 @@ public class Coins_Bag : MonoBehaviour
 
     public void AddsCoins()
     {
+        SoundManager.instance.PlayerGetCoin();
         currentCoins += 1;
         coinText.text = currentCoins.ToString();
     }

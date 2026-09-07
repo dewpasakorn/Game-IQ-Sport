@@ -25,6 +25,8 @@ public class Health : MonoBehaviour
 
     public void GetDamaged(int dmg)
     {
+        PlayerSoundManager.instance.HurtSound();
+        SoundManager.instance.PlayerHurt();
         hitEffect.SetTrigger("Hit");
         currentHealth = Mathf.Max(0, currentHealth - dmg);
         GetDamagedEvent?.Invoke();
