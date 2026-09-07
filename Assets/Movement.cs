@@ -25,6 +25,7 @@ public class Movement : MonoBehaviour
 
     private bool isStart = false;
     private bool wasNearGround = true; // track previous frame's "almost grounded" state
+    private bool isDoubleJump;
 
     private void OnEnable()
     {
@@ -85,19 +86,48 @@ public class Movement : MonoBehaviour
         bool isNearGround = IsNearGround();
         bool isFalling = rid.velocity.y <= 0f;
 
+        bool grounded = IsGround();
+        playerAnimator.SetBool("Jump", false);
+        playerAnimator.SetBool("IsGrounded", grounded);
+
         // Fire "Grounded" the moment we come within nearGroundDistance while falling,
         // but only once per approach (not every frame while near ground)
         if (isNearGround && isFalling && !wasNearGround)
         {
             playerAnimator.SetTrigger("Grounded");
+            isDoubleJump = false;
         }
         wasNearGround = isNearGround;
 
-        if (Input.GetMouseButtonDown(0) && IsGround())
+        if (Input.GetMouseButtonDown(0))
         {
-            playerAnimator.SetTrigger("Jump");
-            rid.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            if (IsGround())
+            {
+                // Jump ครั้งแรก
+                isDoubleJump = false;
+                Jump();
+            }
+            else if (!isDoubleJump)
+            {
+                // Double Jump
+                isDoubleJump = true;
+                Jump();
+            }
         }
+    }
+
+
+    void Jump()
+    {
+        PlayerSoundManager.instance.JumpSound();
+
+        playerAnimator.SetBool("Jump", true);
+
+        Vector3 velocity = rid.velocity;
+        velocity.y = 0;
+        rid.velocity = velocity;
+
+        rid.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
     }
 
     // Actual contact with the ground — used for jump input
