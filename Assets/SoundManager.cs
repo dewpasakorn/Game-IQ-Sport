@@ -9,10 +9,14 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private AudioClip coin;
     [SerializeField] private AudioClip startGame;
     [SerializeField] private AudioClip damaged;
+    [SerializeField] private AudioClip button;
+    [SerializeField] private AudioClip gameOver;
+    [SerializeField] private AudioClip earnCoin;
+    [SerializeField] private AudioClip leaderboard;
 
     private void Awake()
     {
-        if(instance == null)
+        if (instance == null)
         {
             instance = this;
         }
@@ -36,5 +40,25 @@ public class SoundManager : MonoBehaviour
     public void PlayerHurt()
     {
         audioSource.PlayOneShot(damaged);
+    }
+
+    public void ButtonSound()
+    {
+        audioSource.PlayOneShot(button);
+    }
+
+    public void GameOverSound()
+    {
+        audioSource.PlayOneShot(gameOver);
+    }
+
+    public void EarnCoin()
+    {
+        audioSource.PlayOneShot(earnCoin);
+    }
+
+    public void Leaderboard()
+    {
+        audioSource.PlayOneShot(leaderboard);
     }
 }

@@ -3,19 +3,40 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Text.RegularExpressions;  // ใช้สำหรับตรวจสอบรูปแบบ email และเบอร์โทร
+using DG.Tweening;
 
 public class TheEnd : MonoBehaviour
 {
+    [SerializeField] private TMP_Text loseText;
     [SerializeField] private TMP_InputField enterName, enterNumber;
     [SerializeField] private TMP_Text debugText;
     [SerializeField] private Button button;
     [SerializeField] private LeaderBoard leaderBoard;
     [SerializeField] private Coins_Bag coin_bag;
 
+    private Tween typeWrtierTween;
+
     private bool isShowingError = false; // ตัวแปรเพื่อเช็คว่า Debug Text กำลังแสดงข้อความอยู่หรือไม่
+
+    private void Start()
+    {
+        YouLoseAnim();
+
+        SoundManager.instance.GameOverSound();
+    }
+
+
+    void YouLoseAnim()
+    {
+        RectTransform canvas = loseText.GetComponent<RectTransform>();
+        Vector2 scaleTarget = loseText.GetComponent<RectTransform>().localScale;
+        canvas.localScale = new Vector2(5f, 5f);
+        canvas.DOScale(scaleTarget, 1).SetEase(Ease.OutBack);
+    }
 
     public void EnterConfirm()
     {
+        SoundManager.instance.ButtonSound();
         // เช็คว่า input fields ทั้งหมดไม่เป็นค่าว่าง
         if (string.IsNullOrWhiteSpace(enterName.text) || string.IsNullOrWhiteSpace(enterNumber.text))
         {
@@ -31,13 +52,19 @@ public class TheEnd : MonoBehaviour
         }
 
         // ถ้าทุกอย่างถูกต้อง
-        EnterName(enterName.text,enterNumber.text);
+        EnterName(enterName.text, enterNumber.text);
     }
 
-    void EnterName(string userName,string number)
+    void EnterName(string userName, string number)
     {
-        leaderBoard.gameObject.SetActive(true);
+        ShowLeaderBoard();
         leaderBoard.GetLeaderStat(userName, number, coin_bag.GetCurrentCoins());
+    }
+
+    public void ShowLeaderBoard()
+    {
+        SoundManager.instance.ButtonSound();
+        leaderBoard.gameObject.SetActive(true);
         gameObject.SetActive(false);
     }
 

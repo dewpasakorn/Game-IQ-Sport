@@ -9,6 +9,7 @@ public class StartGame : MonoBehaviour, IPointerClickHandler
     public Animator anim;
     public void OnPointerClick(PointerEventData pointerEventData)
     {
+        SoundManager.instance.ButtonSound();
         SoundManager.instance.StartGame();
         OnClickEvent?.Invoke();
         gameObject.SetActive(false);

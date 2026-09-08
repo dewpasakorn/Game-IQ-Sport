@@ -6,8 +6,6 @@ using UnityEngine;
 public class Movement : MonoBehaviour
 {
     [SerializeField] private float movementSpeed = 5;
-    private float speedMultiplay = 1;
-    [SerializeField] private float tickIncreaseSpeed = 0.1f;
     [SerializeField] private float increaseSpeed = 0.1f;
     [SerializeField] private float jumpForce = 3;
     [SerializeField] private Rigidbody rid;
@@ -17,7 +15,6 @@ public class Movement : MonoBehaviour
     [SerializeField] private Animator playerAnimator;
     [SerializeField] private StartGame startGame;
     private Health health;
-    private float _tickIncreaseSpeed;
 
     [SerializeField] private float slowAmount = 2f;
     [SerializeField] private float slowRecoverTime = 1.5f;
@@ -47,7 +44,6 @@ public class Movement : MonoBehaviour
 
     void Awake()
     {
-        _tickIncreaseSpeed = tickIncreaseSpeed;
         health = GetComponent<Health>();
     }
 
@@ -63,7 +59,7 @@ public class Movement : MonoBehaviour
     private IEnumerator SlowRoutine()
     {
         float originalSpeed = movementSpeed;
-        float slowedSpeed = Mathf.Max(0f, originalSpeed - slowAmount);
+        float slowedSpeed = Mathf.Max(0f, originalSpeed / slowAmount);
 
         movementSpeed = slowedSpeed;
 
@@ -146,14 +142,10 @@ public class Movement : MonoBehaviour
     {
         if (!isStart) return;
 
-        _tickIncreaseSpeed = Mathf.Max(0, _tickIncreaseSpeed - Time.deltaTime);
-
-        if (_tickIncreaseSpeed == 0)
-        {
-            speedMultiplay += increaseSpeed;
-            _tickIncreaseSpeed = tickIncreaseSpeed;
-        }
-
-        transform.Translate(Vector3.forward * movementSpeed * speedMultiplay * Time.deltaTime);
+        movementSpeed += increaseSpeed * Time.fixedDeltaTime;
+        playerAnimator.SetFloat("speed", movementSpeed / 4);
+        transform.Translate(
+            Vector3.forward * movementSpeed * Time.fixedDeltaTime
+        );
     }
 }

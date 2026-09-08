@@ -4,6 +4,8 @@ using UnityEngine;
 using System.Linq;
 using System; // ✅ สำหรับ DateTime
 using UnityEngine.SceneManagement;
+using DG.Tweening;
+using EasyTransition;
 
 [System.Serializable]
 public class PlayerData
@@ -25,10 +27,18 @@ public class LeaderBoard : MonoBehaviour
     [SerializeField] private int maximumPlayer = 5;
     [SerializeField] private GameObject leaderStatsPrefab;
     [SerializeField] private GameObject leaderStatsTarget;
+    [SerializeField] private TransitionSettings transition;
+
+    [Header("Animation")]
+    [SerializeField] private float canvasSlideDuration = 0.2f;
+
 
     private string savePathJson;
     private string savePathText;
     private PlayerDataList playerDataList = new PlayerDataList();
+
+    [SerializeField] private RectTransform canvas;
+    [SerializeField] private CanvasGroup canvasGroup;
 
     void Awake()
     {
@@ -41,6 +51,13 @@ public class LeaderBoard : MonoBehaviour
         CheckAndCreateLeaderStat();
     }
 
+    private void Start()
+    {
+        SoundManager.instance.Leaderboard();
+        SliderCanvas(canvas,canvasGroup);
+    }
+
+    #region LoadingLeaderboard
 
     // ✅ รับข้อมูลผู้เล่นใหม่
     public void GetLeaderStat(string _userName, string _number, int _coins)
@@ -124,14 +141,35 @@ public class LeaderBoard : MonoBehaviour
         for (int i = 0; i < sortedPlayers.Count; i++)
         {
             var data = sortedPlayers[i];
+
             GameObject obj = Instantiate(leaderStatsPrefab, leaderStatsTarget.transform);
             LeaderStats stats = obj.GetComponent<LeaderStats>();
+
             stats.SetBoard((i + 1).ToString(), data.userName, data.coins.ToString());
+
+            RectTransform canvas = obj.GetComponent<RectTransform>();
+            canvas.DOScale(new Vector2(1f, 1f),i* 0.3f);
         }
     }
+    #endregion
 
+
+    #region Dotween
+
+    void SliderCanvas(RectTransform _canvas,CanvasGroup _CanvasGroup)
+    {
+        Vector2 targetpos = _canvas.anchoredPosition;
+
+        _canvas.anchoredPosition = new Vector2(-500f, targetpos.y);
+        _canvas.DOAnchorPos(targetpos, canvasSlideDuration).SetEase(Ease.OutBack);
+        _CanvasGroup.alpha = 0;
+        _CanvasGroup.DOFade(1f, canvasSlideDuration);
+    }
+
+    #endregion
     public void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SoundManager.instance.ButtonSound();
+        TransitionManager.Instance().Transition(SceneManager.GetActiveScene().name, transition, 0f);
     }
 }
