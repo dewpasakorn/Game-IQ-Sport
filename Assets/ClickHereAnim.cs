@@ -11,6 +11,6 @@ public class ClickHereAnim : MonoBehaviour
     {
         canvas = gameObject.GetComponent<RectTransform>();
 
-        canvas.transform.DOScale(new Vector2(1f,1f),1f).SetLoops(-1,LoopType.Yoyo);
+        canvas.transform.DOScale(new Vector2(0.8f,0.8f),1f).SetLoops(-1,LoopType.Yoyo);
     }
 }

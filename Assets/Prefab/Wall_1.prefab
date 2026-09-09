@@ -744,7 +744,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5394257282802772263}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: -0.80999994, z: -0.35999966}
+  m_LocalPosition: {x: 0.5, y: -0.80999994, z: 12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1104,6 +1104,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: shrub (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4189543711379883971, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_RootOrder
       value: 36
@@ -1222,6 +1226,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
 --- !u!4 &2669945019875552117 stripped
@@ -1284,6 +1292,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Starfish_02 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 8848600714417471120, guid: 5db8021b933e0da42bafc49bda4e6f11, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db8021b933e0da42bafc49bda4e6f11, type: 3}
 --- !u!4 &2218566586513331118 stripped
@@ -1301,6 +1313,10 @@ PrefabInstance:
     - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_Name
       value: shrub (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4189543711379883971, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_RootOrder
@@ -1420,6 +1436,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
 --- !u!4 &2768178141257322236 stripped
@@ -1437,6 +1457,10 @@ PrefabInstance:
     - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_Name
       value: shrub (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4189543711379883971, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_RootOrder
@@ -1556,6 +1580,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_Palm (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3476177982938520197, guid: 3e4a35dbed2a8154ab26781179422423, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4a35dbed2a8154ab26781179422423, type: 3}
 --- !u!4 &555095818226674972 stripped
@@ -1617,6 +1645,10 @@ PrefabInstance:
     - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_Name
       value: Coins (37)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
@@ -1680,6 +1712,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_Palm (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3476177982938520197, guid: 3e4a35dbed2a8154ab26781179422423, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4a35dbed2a8154ab26781179422423, type: 3}
 --- !u!4 &982898786325639564 stripped
@@ -1742,6 +1778,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Starfish_02 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8848600714417471120, guid: 5db8021b933e0da42bafc49bda4e6f11, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db8021b933e0da42bafc49bda4e6f11, type: 3}
 --- !u!4 &1433301174743100328 stripped
@@ -1803,6 +1843,10 @@ PrefabInstance:
     - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_Name
       value: Coins (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
@@ -1878,6 +1922,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_Palm (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3476177982938520197, guid: 3e4a35dbed2a8154ab26781179422423, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4a35dbed2a8154ab26781179422423, type: 3}
 --- !u!4 &1387644565019838417 stripped
@@ -1895,6 +1943,10 @@ PrefabInstance:
     - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_Name
       value: shrub
+      objectReference: {fileID: 0}
+    - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4189543711379883971, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_RootOrder
@@ -2002,6 +2054,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_Palm (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3476177982938520197, guid: 3e4a35dbed2a8154ab26781179422423, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4a35dbed2a8154ab26781179422423, type: 3}
 --- !u!4 &1652880623615332226 stripped
@@ -2063,6 +2119,10 @@ PrefabInstance:
     - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_Name
       value: Coins (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
@@ -2126,6 +2186,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
 --- !u!4 &4437133597564406357 stripped
@@ -2143,6 +2207,10 @@ PrefabInstance:
     - target: {fileID: 176175835077847192, guid: 1220b67b01ec9234f8ff2ac1f2cd28d5, type: 3}
       propertyPath: m_Name
       value: Cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 176175835077847192, guid: 1220b67b01ec9234f8ff2ac1f2cd28d5, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 933630775484590810, guid: 1220b67b01ec9234f8ff2ac1f2cd28d5, type: 3}
       propertyPath: targetWall
@@ -2274,6 +2342,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_Palm (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3476177982938520197, guid: 3e4a35dbed2a8154ab26781179422423, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4a35dbed2a8154ab26781179422423, type: 3}
 --- !u!4 &2064019140350084065 stripped
@@ -2291,6 +2363,10 @@ PrefabInstance:
     - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_Name
       value: shrub (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4189543711379883971, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_RootOrder
@@ -2422,6 +2498,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone small gray blue 3
       objectReference: {fileID: 0}
+    - target: {fileID: 4162287067675811454, guid: d994f828183a71944b4eecc3dfa6261f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d994f828183a71944b4eecc3dfa6261f, type: 3}
 --- !u!4 &1337333160281805114 stripped
@@ -2439,6 +2519,10 @@ PrefabInstance:
     - target: {fileID: 213692430587752006, guid: 26531aec1040e9a4eb6a4b0189204b9f, type: 3}
       propertyPath: m_Name
       value: stone large gray blue 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 213692430587752006, guid: 26531aec1040e9a4eb6a4b0189204b9f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 701682545454953724, guid: 26531aec1040e9a4eb6a4b0189204b9f, type: 3}
       propertyPath: m_RootOrder
@@ -2570,6 +2654,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_Palm (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3476177982938520197, guid: 3e4a35dbed2a8154ab26781179422423, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4a35dbed2a8154ab26781179422423, type: 3}
 --- !u!4 &2671691045522734001 stripped
@@ -2644,6 +2732,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Starfish_01 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6575206401054366945, guid: 7a293022dea68954c95022f75bade393, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a293022dea68954c95022f75bade393, type: 3}
 --- !u!4 &7514881710201155587 stripped
@@ -2661,6 +2753,10 @@ PrefabInstance:
     - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_Name
       value: shrub (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4189543711379883971, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_RootOrder
@@ -2768,6 +2864,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
 --- !u!4 &703791147231179161 stripped
@@ -2842,6 +2942,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Starfish_01 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6575206401054366945, guid: 7a293022dea68954c95022f75bade393, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a293022dea68954c95022f75bade393, type: 3}
 --- !u!4 &8954759792323522990 stripped
@@ -2903,6 +3007,10 @@ PrefabInstance:
     - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_Name
       value: Coins (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
@@ -2978,6 +3086,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_Palm (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 3476177982938520197, guid: 3e4a35dbed2a8154ab26781179422423, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4a35dbed2a8154ab26781179422423, type: 3}
 --- !u!4 &3833342730411710702 stripped
@@ -3052,6 +3164,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone large gray blue 5 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7994137589984897152, guid: 9c1c44295c32097499220bb06cc0e4d2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c1c44295c32097499220bb06cc0e4d2, type: 3}
 --- !u!4 &6000624856936988709 stripped
@@ -3114,6 +3230,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
 --- !u!4 &1439596043342394822 stripped
@@ -3131,6 +3251,10 @@ PrefabInstance:
     - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_Name
       value: shrub (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4189543711379883971, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_RootOrder
@@ -3250,6 +3374,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone large gray blue 5
       objectReference: {fileID: 0}
+    - target: {fileID: 7994137589984897152, guid: 9c1c44295c32097499220bb06cc0e4d2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9c1c44295c32097499220bb06cc0e4d2, type: 3}
 --- !u!4 &6684761033086048094 stripped
@@ -3267,6 +3395,10 @@ PrefabInstance:
     - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_Name
       value: shrub (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4189543711379883971, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_RootOrder
@@ -3374,6 +3506,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
 --- !u!4 &2168889177650090529 stripped
@@ -3435,6 +3571,10 @@ PrefabInstance:
     - target: {fileID: 6127798799277250435, guid: 483d72b8a99bb604bbaa7883c362d50d, type: 3}
       propertyPath: m_Name
       value: Prop_SwimmingRing_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 6127798799277250435, guid: 483d72b8a99bb604bbaa7883c362d50d, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 483d72b8a99bb604bbaa7883c362d50d, type: 3}
@@ -3498,6 +3638,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
 --- !u!4 &2243446381514718431 stripped
@@ -3559,6 +3703,10 @@ PrefabInstance:
     - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_Name
       value: Coins (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
@@ -3622,6 +3770,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
 --- !u!4 &1890475938740835887 stripped
@@ -3639,6 +3791,10 @@ PrefabInstance:
     - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_Name
       value: shrub (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4189543711379883971, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_RootOrder
@@ -3758,6 +3914,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
 --- !u!4 &7238831434112164342 stripped
@@ -3778,7 +3938,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2603728847876571600, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.95
+      value: 25.44
       objectReference: {fileID: 0}
     - target: {fileID: 2603728847876571600, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3819,6 +3979,10 @@ PrefabInstance:
     - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_Name
       value: Coins (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
@@ -3882,6 +4046,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
 --- !u!4 &7000865598364605020 stripped
@@ -3899,6 +4067,10 @@ PrefabInstance:
     - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_Name
       value: shrub (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4189543711379883971, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_RootOrder
@@ -4030,6 +4202,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stone small gray blue
       objectReference: {fileID: 0}
+    - target: {fileID: 1138472260948075311, guid: 3cb4618a862c1d34bb1e35fa7736fdef, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cb4618a862c1d34bb1e35fa7736fdef, type: 3}
 --- !u!4 &5546225518690269829 stripped
@@ -4047,6 +4223,10 @@ PrefabInstance:
     - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_Name
       value: shrub (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4189543711379883971, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_RootOrder
@@ -4154,6 +4334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
 --- !u!4 &7899838607690099613 stripped
@@ -4216,6 +4400,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Starfish_02
       objectReference: {fileID: 0}
+    - target: {fileID: 8848600714417471120, guid: 5db8021b933e0da42bafc49bda4e6f11, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db8021b933e0da42bafc49bda4e6f11, type: 3}
 --- !u!4 &6140077143737649006 stripped
@@ -4277,6 +4465,10 @@ PrefabInstance:
     - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_Name
       value: Coins (38)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
@@ -4352,6 +4544,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Starfish_01 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6575206401054366945, guid: 7a293022dea68954c95022f75bade393, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a293022dea68954c95022f75bade393, type: 3}
 --- !u!4 &144768781860996838 stripped
@@ -4414,6 +4610,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
 --- !u!4 &7684422243750598139 stripped
@@ -4434,7 +4634,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2603728847876571600, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 15.08
+      value: 19.57
       objectReference: {fileID: 0}
     - target: {fileID: 2603728847876571600, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4442,7 +4642,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2603728847876571600, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2603728847876571600, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4475,6 +4675,10 @@ PrefabInstance:
     - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_Name
       value: Coins (36)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
@@ -4538,6 +4742,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
 --- !u!4 &8439487811499194836 stripped
@@ -4599,6 +4807,10 @@ PrefabInstance:
     - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_Name
       value: Coins (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
@@ -4674,6 +4886,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_Palm (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3476177982938520197, guid: 3e4a35dbed2a8154ab26781179422423, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4a35dbed2a8154ab26781179422423, type: 3}
 --- !u!4 &5910314842869057617 stripped
@@ -4691,6 +4907,10 @@ PrefabInstance:
     - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_Name
       value: shrub (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4189543711379883971, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_RootOrder
@@ -4756,7 +4976,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2603728847876571600, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.34
+      value: 20.83
       objectReference: {fileID: 0}
     - target: {fileID: 2603728847876571600, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4764,7 +4984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2603728847876571600, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2603728847876571600, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_LocalRotation.w
@@ -4798,6 +5018,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
 --- !u!4 &8167607931329624849 stripped
@@ -4815,6 +5039,10 @@ PrefabInstance:
     - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_Name
       value: shrub (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4189543711379883971, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_RootOrder
@@ -4934,6 +5162,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Starfish_0
       objectReference: {fileID: 0}
+    - target: {fileID: 8372205117683687446, guid: 2eff2e29e644f924cb667708224dc532, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2eff2e29e644f924cb667708224dc532, type: 3}
 --- !u!4 &8190637056444934325 stripped
@@ -4996,6 +5228,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
 --- !u!4 &9045330295875833447 stripped
@@ -5013,6 +5249,10 @@ PrefabInstance:
     - target: {fileID: 6603900171943504260, guid: 9f64149a1594c6f43a56f93eb857982f, type: 3}
       propertyPath: m_Name
       value: WallDamage
+      objectReference: {fileID: 0}
+    - target: {fileID: 6603900171943504260, guid: 9f64149a1594c6f43a56f93eb857982f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6603900171943504262, guid: 9f64149a1594c6f43a56f93eb857982f, type: 3}
       propertyPath: m_Size.x
@@ -5040,7 +5280,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6603900171943504267, guid: 9f64149a1594c6f43a56f93eb857982f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.94
+      value: 22.43
       objectReference: {fileID: 0}
     - target: {fileID: 6603900171943504267, guid: 9f64149a1594c6f43a56f93eb857982f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5076,6 +5316,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6603900171943504267, guid: 9f64149a1594c6f43a56f93eb857982f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7609619070106105111, guid: 9f64149a1594c6f43a56f93eb857982f, type: 3}
+      propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -5152,6 +5396,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: skull mountain
       objectReference: {fileID: 0}
+    - target: {fileID: 5557834328774187781, guid: b8c5edca6b9707249bdee190239a0d1e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8c5edca6b9707249bdee190239a0d1e, type: 3}
 --- !u!4 &1961994035902896950 stripped
@@ -5214,6 +5462,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Starfish_0 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 8372205117683687446, guid: 2eff2e29e644f924cb667708224dc532, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2eff2e29e644f924cb667708224dc532, type: 3}
 --- !u!4 &5167899208688365971 stripped
@@ -5231,6 +5483,10 @@ PrefabInstance:
     - target: {fileID: 2835490314883950489, guid: e14c06da4dfc4f2468a68ff00c717df0, type: 3}
       propertyPath: m_Name
       value: stone large gray blue 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2835490314883950489, guid: e14c06da4dfc4f2468a68ff00c717df0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3175741182274157859, guid: e14c06da4dfc4f2468a68ff00c717df0, type: 3}
       propertyPath: m_RootOrder
@@ -5350,6 +5606,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Starfish_02 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8848600714417471120, guid: 5db8021b933e0da42bafc49bda4e6f11, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db8021b933e0da42bafc49bda4e6f11, type: 3}
 --- !u!4 &9201442004372664914 stripped
@@ -5412,6 +5672,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
 --- !u!4 &4962972623913287569 stripped
@@ -5429,6 +5693,10 @@ PrefabInstance:
     - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_Name
       value: shrub (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4189543711379883971, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_RootOrder
@@ -5503,6 +5771,10 @@ PrefabInstance:
     - target: {fileID: 6141432035922498149, guid: cbed2abf2706c324fafa549bf41c15cf, type: 3}
       propertyPath: m_Name
       value: stone small gray blue 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6141432035922498149, guid: cbed2abf2706c324fafa549bf41c15cf, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6805342873335957727, guid: cbed2abf2706c324fafa549bf41c15cf, type: 3}
       propertyPath: m_RootOrder
@@ -5622,6 +5894,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree_Palm
       objectReference: {fileID: 0}
+    - target: {fileID: 3476177982938520197, guid: 3e4a35dbed2a8154ab26781179422423, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e4a35dbed2a8154ab26781179422423, type: 3}
 --- !u!4 &7477855679358807532 stripped
@@ -5639,6 +5915,10 @@ PrefabInstance:
     - target: {fileID: 7961333496218553169, guid: 64d4b6112f52fdd4ebc61d52d4818627, type: 3}
       propertyPath: m_Name
       value: Towel_02
+      objectReference: {fileID: 0}
+    - target: {fileID: 7961333496218553169, guid: 64d4b6112f52fdd4ebc61d52d4818627, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8824248433586456843, guid: 64d4b6112f52fdd4ebc61d52d4818627, type: 3}
       propertyPath: m_RootOrder
@@ -5758,6 +6038,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
 --- !u!4 &4829484413171509973 stripped
@@ -5819,6 +6103,10 @@ PrefabInstance:
     - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_Name
       value: Coins (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
@@ -5894,6 +6182,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Starfish_01
       objectReference: {fileID: 0}
+    - target: {fileID: 6575206401054366945, guid: 7a293022dea68954c95022f75bade393, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a293022dea68954c95022f75bade393, type: 3}
 --- !u!4 &2708528143242654908 stripped
@@ -5956,6 +6248,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
 --- !u!4 &5685217682683183817 stripped
@@ -5976,7 +6272,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2603728847876571600, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.62
+      value: 24.11
       objectReference: {fileID: 0}
     - target: {fileID: 2603728847876571600, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6017,6 +6313,10 @@ PrefabInstance:
     - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_Name
       value: Coins (18)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
@@ -6080,6 +6380,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
 --- !u!4 &5759401728568129960 stripped
@@ -6141,6 +6445,10 @@ PrefabInstance:
     - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_Name
       value: Coins (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
@@ -6204,6 +6512,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
 --- !u!4 &5305519437289577927 stripped
@@ -6266,6 +6578,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
 --- !u!4 &5404065776964600396 stripped
@@ -6283,6 +6599,10 @@ PrefabInstance:
     - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_Name
       value: shrub (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4189543711379883971, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_RootOrder
@@ -6358,6 +6678,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallDamage (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6603900171943504260, guid: 9f64149a1594c6f43a56f93eb857982f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6603900171943504262, guid: 9f64149a1594c6f43a56f93eb857982f, type: 3}
       propertyPath: m_Size.x
       value: 0.8
@@ -6422,6 +6746,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7609619070106105111, guid: 9f64149a1594c6f43a56f93eb857982f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f64149a1594c6f43a56f93eb857982f, type: 3}
 --- !u!4 &3044607750569801389 stripped
@@ -6442,7 +6770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2603728847876571600, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 18.01
+      value: 22.5
       objectReference: {fileID: 0}
     - target: {fileID: 2603728847876571600, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6483,6 +6811,10 @@ PrefabInstance:
     - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_Name
       value: Coins
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
@@ -6546,6 +6878,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
 --- !u!4 &5940730274126432078 stripped
@@ -6563,6 +6899,10 @@ PrefabInstance:
     - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_Name
       value: shrub (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4189543711379883971, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_RootOrder
@@ -6682,6 +7022,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
 --- !u!4 &6010704073675789825 stripped
@@ -6699,6 +7043,10 @@ PrefabInstance:
     - target: {fileID: 8140575058263471669, guid: a6f8351c60152984eb323db18eb37719, type: 3}
       propertyPath: m_Name
       value: stone large gray blue 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8140575058263471669, guid: a6f8351c60152984eb323db18eb37719, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8913451930324479119, guid: a6f8351c60152984eb323db18eb37719, type: 3}
       propertyPath: m_RootOrder
@@ -6818,6 +7166,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Starfish_0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 8372205117683687446, guid: 2eff2e29e644f924cb667708224dc532, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2eff2e29e644f924cb667708224dc532, type: 3}
 --- !u!4 &6651424791904169910 stripped
@@ -6880,6 +7232,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
 --- !u!4 &6382180511258251365 stripped
@@ -6897,6 +7253,10 @@ PrefabInstance:
     - target: {fileID: 238581814079125255, guid: c51d67fc21433c94cb3222f96771c489, type: 3}
       propertyPath: m_Name
       value: Prop_BeachUmbrella
+      objectReference: {fileID: 0}
+    - target: {fileID: 238581814079125255, guid: c51d67fc21433c94cb3222f96771c489, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7369328177323141522, guid: c51d67fc21433c94cb3222f96771c489, type: 3}
       propertyPath: m_RootOrder
@@ -7016,6 +7376,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coins (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
 --- !u!4 &6496598607607777397 stripped
@@ -7033,6 +7397,10 @@ PrefabInstance:
     - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_Name
       value: shrub (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4189543711379883971, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_RootOrder
@@ -7095,6 +7463,10 @@ PrefabInstance:
     - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_Name
       value: shrub (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3562329036429811065, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4189543711379883971, guid: d89cffeade6d8ee499a0b16e9286d46e, type: 3}
       propertyPath: m_RootOrder
@@ -7213,6 +7585,10 @@ PrefabInstance:
     - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
       propertyPath: m_Name
       value: Coins (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3122174636995967517, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ec95d8539c456d4ba4a4707ab6c3634, type: 3}

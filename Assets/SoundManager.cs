@@ -13,6 +13,8 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private AudioClip gameOver;
     [SerializeField] private AudioClip earnCoin;
     [SerializeField] private AudioClip leaderboard;
+    [SerializeField] private AudioClip popSound;
+    [SerializeField] private AudioClip letgo;
 
     private void Awake()
     {
@@ -60,5 +62,15 @@ public class SoundManager : MonoBehaviour
     public void Leaderboard()
     {
         audioSource.PlayOneShot(leaderboard);
+    }
+
+    public void PopSound()
+    {
+        audioSource.PlayOneShot(popSound);
+    }
+
+    public void letGoSound()
+    {
+        audioSource.PlayOneShot(letgo);
     }
 }

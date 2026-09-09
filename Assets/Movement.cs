@@ -14,6 +14,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private Animator playerAnimator;
     [SerializeField] private StartGame startGame;
+    [SerializeField] private Transform jumpEffect;
     private Health health;
 
     [SerializeField] private float slowAmount = 2f;
@@ -116,7 +117,6 @@ public class Movement : MonoBehaviour
     void Jump()
     {
         PlayerSoundManager.instance.JumpSound();
-
         playerAnimator.SetBool("Jump", true);
 
         Vector3 velocity = rid.velocity;
@@ -124,6 +124,8 @@ public class Movement : MonoBehaviour
         rid.velocity = velocity;
 
         rid.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+
+        Transform vfx = Instantiate(jumpEffect, new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z), transform.rotation);
     }
 
     // Actual contact with the ground — used for jump input
